@@ -2,11 +2,46 @@
 <html lang="ja">
 <head>
     <style>
-        #btnBack, #btnWatchOut, #btnSuperior {
+        #btnBack, #btnWatchOut, #btnSuperior, #btnBackMinus, #btnWatchOutMinus, #btnSuperiorMinus {
             font-size: 20px;
             padding: 15px 30px;
             margin: 10px;
+            margin-right: 30px;
         }
+        #memo {
+            box-sizing: border-box;
+            width: 97.5%;
+            margin: 20px 0;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+            height: 100px;
+            font-size: 16px;
+        }
+
+        #toDo {
+            box-sizing: border-box;
+            width: 97.5%;
+            margin: 20px 0;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+            height: 50px;
+            font-size: 16px;
+        }
+
+        #resultArea {
+            box-sizing: border-box;
+            width: 97.5%;
+            margin: 20px 0;
+            font-size: 16px;
+            padding: 10px;
+            display: block;
+            min-height: 50px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +49,21 @@
 </head>
 <body>
     <button id ="btnBack">差し戻し</button>
+    <button id ="btnBackMinus">差し戻し -1</button>
     <p id ="textBack">差し戻し数: 0</p>
     <button id ="btnWatchOut">要注意人物報告</button>
+    <button id ="btnWatchOutMinus">要注意人物報告 -1</button>
     <p id ="textWatchOut">要注意人物報告数: 0</p>
     <button id = "btnSuperior">優秀添削報告</button>
+    <button id = "btnSuperiorMinus">優秀添削報告 -1</button>
     <p id = "textSuperior">優秀添削報告数: 0</p>
+    <p>メモ欄</p>
+    <textarea id="memo"></textarea>
+    <p>返却詳細</p>
+    <textarea id="toDo"></textarea>
+    <p>コピペ内容</p>
+    <p id="resultArea"></p>
+
     <script src="main.js"></script>
 </body>
 </html>
