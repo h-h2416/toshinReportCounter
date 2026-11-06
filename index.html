@@ -42,12 +42,30 @@
             background-color: #f9f9f9;
         }
 
+        #normalControls {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-align: center;
+        }
+
+        #btnNormal, #btnNormalMinus {
+            font-size: 28px;
+            padding: 150px 300px;
+            margin: 6px;
+        }
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>報告数カウンター</title>
 </head>
 <body>
+    <div id="normalControls">
+        <button id="btnNormal">正常</button>
+        <button id="btnNormalMinus">正常 -1</button>
+        <p id="textNormal">正常返却数：0</p>
+    </div>
     <button id ="btnBack">差し戻し</button>
     <button id ="btnBackMinus">差し戻し -1</button>
     <p id ="textBack">差し戻し数: 0</p>

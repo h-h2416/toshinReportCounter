@@ -9,10 +9,24 @@ const btnWatchOutMinus = document.getElementById("btnWatchOutMinus");
 const btnSuperior = document.getElementById("btnSuperior");
 const textSuperior = document.getElementById("textSuperior");
 const btnSuperiorMinus = document.getElementById("btnSuperiorMinus");
+const btnNormal = document.getElementById("btnNormal");
+const btnNormalMinus = document.getElementById("btnNormalMinus");
+const textNormal = document.getElementById("textNormal");
 
 let countBack = 0;
 let countWatchOut = 0;
 let countSuperior = 0;
+let countNormal = 0;
+
+btnNormal.addEventListener("click", function () {
+    countNormal += 1;
+    textNormal.textContent = "正常返却数：" + countNormal;
+});
+
+btnNormalMinus.addEventListener("click", function () {
+    countNormal -= 1;
+    textNormal.textContent = "正常返却数：" + countNormal;
+});
 
 let resultArea = document.getElementById("resultArea");
 const toDo = document.getElementById("toDo");
